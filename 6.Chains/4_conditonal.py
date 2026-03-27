@@ -42,4 +42,4 @@ prompt2 = PromptTemplate(
 
 classifier_chain2 = prompt2 | model1 | parser2
 result2=classifier_chain2.invoke({'review': 'Movie was just OK'})
-print(result2)
+print(result2) # reviews will be forced to be either one
